@@ -1,0 +1,398 @@
+* {
+    background-color: beige;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+A:link {
+    text-decoration: none
+}
+
+A:visited {
+    color: black;
+    font-family: arial;
+    text-decoration: none
+}
+
+A:hover {
+    color: black;
+    font-family: arial;
+    text-decoration: none
+}
+
+* {
+    outline: none !important;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+textarea:focus,
+input:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    gap: 10px;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.header {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: beige;
+    grid-area: header;
+}
+
+.nav {
+    background-color: beige;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: black;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+}
+
+.main {
+    background-color: beige;
+    grid-area: main;
+}
+
+.footer {
+    background-color: rgb(0, 12, 46);
+    grid-area: footer;
+}
+
+.FooterAside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto
+}
+
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+.articulo1 img {
+    width: 100%;
+}
+
+.ContactosRedes li {
+    list-style: none;
+    display: inline-block;
+}
+
+.Proyecto img:hover {
+    width: 550px;
+    height: auto;
+}
+
+#TituloSobreMi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerBox {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.Galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+}
+
+.Galeria :hover {
+    width: 550px;
+    height: auto;
+}
+
+/* Mobile  Version */
+
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .nav {
+        display: flex;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    .header {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: beige;
+        grid-area: header;
+    }
+
+    .nav {
+        background-color: beige;
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav ul li {
+        display: inline-block;
+    }
+
+    .nav ul li a {
+        color: black;
+        display: block;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .nav ul li a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #000000;
+    }
+
+    .main {
+        background-color: beige;
+        grid-area: main;
+    }
+
+    .articulo1 {
+        background-size: contain;
+    }
+
+    .footer {
+        background-color: rgb(0, 12, 46);
+        grid-area: footer;
+    }
+
+    .FooterAside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: auto
+    }
+
+    .ContactosMapa {
+        display: none;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px
+    }
+
+    .articulo1 img{
+        background-position: center center;
+        height: 1000px;
+        background-attachment: fixed;
+        background-size: cover;
+    } 
+}
+
+/* Pc Version */
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    A:link {
+        text-decoration: none
+    }
+    
+    A:visited {
+        color: black;
+        font-family: arial;
+        text-decoration: none
+    }
+    
+    A:hover {
+        color: black;
+        font-family: arial;
+        text-decoration: none
+    }
+    
+    * {
+        outline: none !important;
+    }
+    
+    *:focus {
+        outline: none !important;
+    }
+    
+    textarea:focus,
+    input:focus {
+        outline: none !important;
+    }
+    
+    a {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        gap: 10px;
+    }
+    
+    h1,
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    
+    .header {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: beige;
+        grid-area: header;
+    }
+    
+    .nav {
+        background-color: beige;
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .nav ul li {
+        display: inline-block;
+    }
+    
+    .nav ul li a {
+        color: black;
+        display: block;
+        padding: 20px 20px;
+        text-decoration: none;
+    }
+    
+    .nav ul li a:hover {
+        text-decoration: none;
+        color: white;
+        background-color: #000000;
+    }
+    
+    .main {
+        background-color: beige;
+        grid-area: main;
+    }
+    
+    .footer {
+        background-color: rgb(0, 12, 46);
+        grid-area: footer;
+    }
+    
+    .FooterAside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: auto
+    }
+    
+    body {
+        margin: 0px;
+        padding: 0px
+    }
+    
+    .articulo1 img {
+        width: 100%;
+    }
+    
+    .ContactosRedes li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .Proyecto img:hover {
+        width: 550px;
+        height: auto;
+    }
+    
+    #TituloSobreMi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .containerBox {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 20px 100px;
+    }
+    
+    .Galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+    }
+    
+    .Galeria :hover {
+        width: 550px;
+        height: auto;
+    }
+}
